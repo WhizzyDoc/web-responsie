@@ -15,48 +15,48 @@ let iframes=document.getElementsByClassName("iframes")[0];
 function run(){
     iframes.innerHTML=`
     <div class="style" id="iframe0">
-        <p>Dimension: Responsive (240 &times; 480)</p>
-        <iframe src=" ${enter.value} " style="width:240px; height:480px;"></iframe>
+        <p>Dimension: Responsive (viewport)</p>
+        <iframe src=" ${enter.value} " style="width:100%; height:100%;"></iframe>
     </div>
     <div class="style" id="iframe1">
         <p>Dimension: iPhone SE (375 &times; 667)</p>
-        <iframe src="${enter.value}" style="width:375px; height:667px"></iframe>
+        <iframe src="${enter.value}" style="width:375px; height:667px; transform:scale(0.7); position:relative; top:-100px;"></iframe>
     </div>
     <div class="style" id="iframe2">
         <p>Dimension: iPhone XR (414 &times; 896)</p>
-        <iframe src="${enter.value}" style="width:414px; height:896px"></iframe>
+        <iframe src="${enter.value}" style="width:414px; height:896px; transform:scale(0.7); position:relative; top:-130px;"></iframe>
     </div>
     <div class="style" id="iframe3">
         <p>Dimension: iPhone 12/13 Pro (390 &times; 844)</p>
-        <iframe src="${enter.value}" style="width:390px; height:844px"></iframe>
+        <iframe src="${enter.value}" style="width:390px; height:844px; transform:scale(0.7); position:relative; top:-120px;"></iframe>
     </div>
     <div class="style" id="iframe4">
         <p>Dimension: Samsung S8+ (360 &times; 740)</p>
-        <iframe src="${enter.value}" style="width:360px; height:740px"></iframe>
+        <iframe src="${enter.value}" style="width:360px; height:740px; transform:scale(0.8); position:relative; top:-80px;"></iframe>
     </div>
     <div class="style" id="iframe5">
         <p>Dimension: Samsung S20 (412 &times; 915)</p>
-        <iframe src="${enter.value}" style="width:412px; height:915px"></iframe>
+        <iframe src="${enter.value}" style="width:412px; height:915px; transform:scale(0.8); position:relative; top:-80px;"></iframe>
     </div>
     <div class="style" id="iframe6">
-        <p>Dimension: Mobile Big Screen (540 &times; 720)</p>
-        <iframe src="${enter.value}" style="width:540px; height:720px"></iframe>
+        <p>Dimension: Mobile Big Screen (599 &times; 820)</p>
+        <iframe src="${enter.value}" style="width:599px; height:820px; transform:scale(0.8); position:relative; top:-70px;"></iframe>
     </div>
     <div class="style" id="iframe7">
         <p>Dimension: iPad Air (820 &times; 1180)</p>
-        <iframe src="${enter.value}" style="width:820px; height:1180px"></iframe>
+        <iframe src="${enter.value}" style="width:820px; height:1180px; transform:scale(0.5); position:relative; top:-300px;"></iframe>
     </div>
     <div class="style" id="iframe8">
         <p>Dimension: iPad Mini/Tablet (768 &times; 1024)</p>
-        <iframe src="${enter.value}" style="width:768px; height:1024px"></iframe>
+        <iframe src="${enter.value}" style="width:768px; height:1024px; transform:scale(0.6); position:relative; top:-200px;"></iframe>
     </div>
     <div class="style" id="iframe9">
         <p>Dimension: Mobile Small Screen (280 &times; 653)</p>
-        <iframe src="${enter.value}" style="width:280px; height:653px"></iframe>
+        <iframe src="${enter.value}" style="width:280px; height:653px;"></iframe>
     </div>
     <div class="style" id="ifraame10">
         <p>Dimension: Surface Pro 7/Mini PC (912 &times; 1368)</p>
-        <iframe src="${enter.value}" style="width:912px; height:1368px"></iframe>
+        <iframe src="${enter.value}" style="width:912px; height:1368px; transform:scale(0.5); position:relative; top:-320px;"></iframe>
     </div>
     <div class="style" id="iframe11">
         <p>Width:968px</p>

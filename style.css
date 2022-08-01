@@ -48,6 +48,12 @@ button{
 .iframes{
     margin: 0 auto;
     transform: scale(1);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
 }
 iframe{
     display: block;
