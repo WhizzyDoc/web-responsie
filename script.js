@@ -40,15 +40,15 @@ function run(){
     </div>
     <div class="style" id="iframe6">
         <p>Dimension: Mobile Big Screen (599 &times; 820)</p>
-        <iframe src="${enter.value}" style="width:599px; height:820px; transform:scale(0.8); position:relative; top:-70px;"></iframe>
+        <iframe src="${enter.value}" style="width:599px; height:820px; transform:scale(0.6); position:relative; top:-150px;"></iframe>
     </div>
     <div class="style" id="iframe7">
         <p>Dimension: iPad Air (820 &times; 1180)</p>
-        <iframe src="${enter.value}" style="width:820px; height:1180px; transform:scale(0.5); position:relative; top:-300px;"></iframe>
+        <iframe src="${enter.value}" style="width:820px; height:1180px; transform:scale(0.4); position:relative; top:-360px;"></iframe>
     </div>
     <div class="style" id="iframe8">
         <p>Dimension: iPad Mini/Tablet (768 &times; 1024)</p>
-        <iframe src="${enter.value}" style="width:768px; height:1024px; transform:scale(0.6); position:relative; top:-200px;"></iframe>
+        <iframe src="${enter.value}" style="width:768px; height:1024px; transform:scale(0.45); position:relative; top:-280px;"></iframe>
     </div>
     <div class="style" id="iframe9">
         <p>Dimension: Mobile Small Screen (280 &times; 653)</p>
@@ -56,7 +56,7 @@ function run(){
     </div>
     <div class="style" id="ifraame10">
         <p>Dimension: Surface Pro 7/Mini PC (912 &times; 1368)</p>
-        <iframe src="${enter.value}" style="width:912px; height:1368px; transform:scale(0.5); position:relative; top:-320px;"></iframe>
+        <iframe src="${enter.value}" style="width:912px; height:1368px; transform:scale(0.35); position:relative; top:-450px;"></iframe>
     </div>
     <div class="style" id="iframe11">
         <p>Width:968px</p>
