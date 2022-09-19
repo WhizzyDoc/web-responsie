@@ -1,70 +1,163 @@
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: #eee;
-}
-body p {
-    font-size:12px;
-}
-.input{
-    text-align: center;
-    margin-top: 20px;
-}
-input{
-    width: 50%;
-    margin-right: 5px;
-    height: 15px;
-    padding: 12px;
-    border: 2px solid gray;
-    border-radius: 12px;
-    font-family: inherit;
-    
-}
-button{
-    margin-left:5px;
-    margin-bottom: 5px;
-    padding: 10px;
-    border: 2px solid #333;
-    border-radius: 12px;
-    color:white;
-    background-color: #333;
-    font-family: inherit;
-}
-.button {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+    * {
+      box-sizing: border-box;
+  }
+  
+    html {
+      height: 100%;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #111;
+      width: 100%;
+      margin: 0;
+  }
+  
+    span {
+      padding-right: 15px;
+      padding-left: 15px;
+  }
+  
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+  }
+
+  .bg-chat{
+    background-color: #222;
+    border: 4px solid #333;
+    border-radius: 10px;
+    width: 95%;
+    max-width: 900px;
+    height: 450px;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 19px 10px;
-}
-@media only screen and (min-width:1000px) {
-    .button {
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0;
-        z-index: 1;
-    }
-}
-#disp {
-    padding: 15px 20px;
-}
-.iframes{
-    margin: 0 auto;
+  }
+
+  .header-con{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    -ms-flex-direction: column;
     justify-content: center;
-    align-items:center;
-}
-iframe{
-    display: block;
-    border: 1px solid black;
-    margin: 0 auto;
-    padding:3px;
-}
-.style{
-    text-align: center;
-    color:red;
-    margin-top:5px;
-    font-weight: 600;
-}
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: #111;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .robot{
+      width: 50px;
+      height: 50px;
+  }
+  
+  .chat {
+      height: 400px;
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  } 
+   
+    input { 
+      padding: 15px; 
+      margin-left: auto;
+      border-radius: 10px; 
+      border: 4px solid rgb(79, 153, 196);
+      width: 100%;
+      outline: none;
+  }
+
+  input:focus{
+    border: 4px solid rgb(79, 153, 196);
+    color: black;
+  }
+  
+  .messages {
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      height: 90%;
+      width: 100%;
+      background-color: #000;
+      padding: 15px;
+      margin: 15px;
+      border-radius: 10px;
+      border: 4px solid rgb(79, 153, 196);
+  }
+  
+  #bot {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+  }
+
+  #user{
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+  }
+  
+  .bot {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+  }
+
+  .bot span{
+    border-radius: 10px 10px 10px 0;
+    margin-left: 4px;
+    background: darkred;
+    color: white;
+  }
+  
+  .avatar {
+      height: 25px;
+  }
+
+  span{
+      background-color: rgb(3, 144, 226);
+      color: #fff;
+  }
+  
+  img{
+      border-radius: 50%;
+  }
+
+  .response {
+      display: flex;
+      align-items: center;
+      height: 25px;
+  }
+
+  #user span{
+    border-radius: 10px 10px 0px 10px;
+    margin-right: 4px;
+  }
+  
+  
+  /* Mobile */
+  
+  @media only screen and (max-width: 980px) {
+    .container {
+          flex-direction: column; 
+          justify-content: flex-start;
+      }
+      .chat {
+          width: 75vw;
+          margin: 10vw;
+      }
+  }
