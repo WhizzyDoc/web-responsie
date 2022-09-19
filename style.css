@@ -60,7 +60,7 @@
   }
   
   .chat {
-      width: 50vw;
+      width: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -78,7 +78,7 @@
   }
   button {
     width: 20%;
-    padding: 15px;
+    padding: 10px;
     background:rgb(3, 144, 226);
     color: white;
     border: none;
@@ -148,7 +148,7 @@
   .response {
       display: flex;
       align-items: center;
-      height: 25px;
+      padding: 5px;
   }
 
   #user span{
@@ -167,8 +167,7 @@
         height: 350px;
       }
       .chat {
-          width: 75vw;
-          margin: 10vw;
+          margin: 20px;
       }
   }
   @media only screen and (min-width: 900px) {

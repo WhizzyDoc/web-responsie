@@ -15,7 +15,7 @@ const userTexts = [
     //6
     ["who are you", "are you human", "are you bot", "are you human or bot"],
     //7
-    ["who created you", "who made you", "were you created"],
+    ["who created you", "who made you", "were you created", "who programmed you"],
     //8
     [
       "your name please",
