@@ -2,7 +2,13 @@ const inputValue = document.getElementById("input");
 let finalResult;
 let reply;
 const messagesContainer = document.getElementById("messages");
+const send = document.querySelector("#send");
   
+send.addEventListener("click", function() {
+  let input = inputValue.value;
+        inputValue.value = "";
+        output(input);
+})
 
 document.addEventListener("DOMContentLoaded", () => {
     inputValue.addEventListener("keydown", (e) => {
